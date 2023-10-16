@@ -27,3 +27,14 @@ int es_primo(int n) {
     }
     return 1;
 }
+int contar_digitos_primos(int numero) {
+    int contador = 0;
+    while (numero > 0) {
+        int digito = numero % 10;
+        if (es_primo(digito)) {
+            contador++;
+        }
+        numero /= 10;
+    }
+    return contador;
+}
