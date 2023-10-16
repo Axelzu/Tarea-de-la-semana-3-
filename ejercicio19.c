@@ -13,3 +13,8 @@ int esPrimo(int numero) {
     }
     return 1;
 }
+int main() {
+    int numero;
+    printf("Ingrese un número entero: ");
+    scanf("%d", &numero);
+}
