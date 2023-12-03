@@ -27,3 +27,31 @@ void sumarMatrices(int filas, int columnas, int matriz1[filas][columnas], int ma
         }
     }
 }
+int main() {
+    int filas, columnas;
+
+    printf("Ingrese el número de filas de las matrices: ");
+    scanf("%d", &filas);
+    printf("Ingrese el número de columnas de las matrices: ");
+    scanf("%d", &columnas);
+
+    int matriz1[filas][columnas];
+    int matriz2[filas][columnas];
+    int resultado[filas][columnas];
+
+    inicializarMatriz(filas, columnas, matriz1);
+    inicializarMatriz(filas, columnas, matriz2);
+
+    printf("Matriz 1:\n");
+    mostrarMatriz(filas, columnas, matriz1);
+
+    printf("Matriz 2:\n");
+    mostrarMatriz(filas, columnas, matriz2);
+
+    sumarMatrices(filas, columnas, matriz1, matriz2, resultado);
+
+    printf("Matriz Resultado:\n");
+    mostrarMatriz(filas, columnas, resultado);
+
+    return 0;
+}
