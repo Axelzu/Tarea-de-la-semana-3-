@@ -19,3 +19,11 @@ void mostrarMatriz(int filas, int columnas, int matriz[filas][columnas]) {
         printf("\n");
     }
 }
+// aqui es para la suma entre las 2 matrices
+void sumarMatrices(int filas, int columnas, int matriz1[filas][columnas], int matriz2[filas][columnas], int resultado[filas][columnas]) {
+    for (int i = 0; i < filas; i++) {
+        for (int j = 0; j < columnas; j++) {
+            resultado[i][j] = matriz1[i][j] + matriz2[i][j];
+        }
+    }
+}
