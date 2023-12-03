@@ -29,3 +29,21 @@ void mostrarArregloTridimensional(int x, int y, int z, int arreglo[x][y][z]) {
         printf("\n");
     }
 }
+int main() {
+    int x, y, z;
+    
+    printf("Ingrese las dimensiones del arreglo tridimensional:\n");
+    printf("x: ");
+    scanf("%d", &x);
+    printf("y: ");
+    scanf("%d", &y);
+    printf("z: ");
+    scanf("%d", &z);
+    int arreglo[x][y][z];
+    
+    inicializarArreglo(x, y, z, arreglo);
+    marcarUltimaMatriz(x, y, z, arreglo);
+    mostrarArregloTridimensional(x, y, z, arreglo);
+
+    return 0;
+}
