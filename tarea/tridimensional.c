@@ -17,3 +17,15 @@ void marcarUltimaMatriz(int x, int y, int z, int arreglo[x][y][z]) {
         }
     }
 }
+// mostrara el arreglo tridimensional 
+void mostrarArregloTridimensional(int x, int y, int z, int arreglo[x][y][z]) {
+    for (int i = 0; i < x; i++) {
+        for (int j = 0; j < y; j++) {
+            for (int k = 0; k < z; k++) {
+                printf("%d ", arreglo[i][j][k]);
+            }
+            printf("\n");
+        }
+        printf("\n");
+    }
+}
