@@ -9,3 +9,11 @@ void inicializarArreglo(int x, int y, int z, int arreglo[x][y][z]) {
         }
     }
 }
+// aqui el arreglo para que la ultima matriz nos de 1
+void marcarUltimaMatriz(int x, int y, int z, int arreglo[x][y][z]) {
+    for (int j = 0; j < y; j++) {
+        for (int k = 0; k < z; k++) {
+            arreglo[x-1][j][k] = 1;
+        }
+    }
+}
